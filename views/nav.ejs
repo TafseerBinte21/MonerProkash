@@ -1,0 +1,219 @@
+<% if (role=='USER'){ %>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="img/moner prokash.png"  width="100" />
+        </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/"
+                        >Home</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/about"
+                        >About us</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/help"
+                        >Get help</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="/course"
+                        >Courses</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="/contact"
+                        >Contact us</a
+                    >
+                </li>
+            </ul>
+
+            <a
+                href="/profile/<%= user.id %>"
+                style="color: white; text-decoration: none; margin-right: 15px"
+                >Profile</a
+            >
+
+            <button class="btn btn-primary">
+                <a href="/logout" style="color: white; text-decoration: none"
+                    >Logout</a
+                >
+            </button>
+        </div>
+    </div>
+</nav>
+<% } else if (role=='ADMIN'){ %>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="img/moner prokash.png" alt="MonerProkash" width="100" />
+        </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/"
+                        >Home</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/about"
+                        >About us</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="/bookinglist"
+                        >Booking</a
+                    >
+                </li>
+                
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="/userlist"
+                        >User List</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="/counselorlist"
+                        >Counselor List</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="/course"
+                        >Courses</a
+                    >
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="/courselist"
+                        >Course Bookinglist</a
+                    >
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="/contact"
+                        >Contact us</a
+                    >
+                </li>
+            </ul>
+            <button class="btn btn-primary">
+                <a href="/logout" style="color: white; text-decoration: none"
+                    >Logout</a
+                >
+            </button>
+        </div>
+    </div>
+</nav>
+<% } else if (role=='COUNSELOR'){ %>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="img/moner prokash.png" alt="MonerProkash" width="100" />
+        </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/"
+                        >Home</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/about"
+                        >About us</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="/bookinglist"
+                        >Booking</a
+                    >
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="/course"
+                        >Courses</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="/contact"
+                        >Contact us</a
+                    >
+                </li>
+            </ul>
+            <button class="btn btn-primary">
+                <a href="/logout" style="color: white; text-decoration: none"
+                    >Logout</a
+                >
+            </button>
+        </div>
+    </div>
+</nav>
+<% } %>
